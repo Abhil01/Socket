@@ -1,0 +1,17 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "Socket room for sync",
+  "main": "socket.js",
+  "scripts": {
+    "start": "node socket.js"
+  },
+  "author": "Abhinav Lakhara",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
