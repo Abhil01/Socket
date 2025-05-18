@@ -43,8 +43,8 @@ io.on("connection",(socket)=>{
         socket.to(roomID).emit('reset');
     })
 
-    socket.on('forward',({roomID,currentTime})=>{
-        socket.to(roomID).emit('forward',{currentTime});
+    socket.on('forward',({roomID,ct})=>{
+        socket.to(roomID).emit('forward',{ct});
     })
 
     socket.on('backward',({roomID})=>{
