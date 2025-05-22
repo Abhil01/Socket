@@ -46,8 +46,8 @@ io.on("connection", (socket) => {
         socket.to(roomIDURL).emit('forward', { ct });
     });
 
-    socket.on('backward', ({ roomIDURL }) => {
-        socket.to(roomIDURL).emit('backward');
+    socket.on('backward', ({ roomIDURL,ct }) => {
+        socket.to(roomIDURL).emit('backward',{ct});
     });
 
     // Logout event
@@ -62,10 +62,10 @@ io.on("connection", (socket) => {
 
     // Handle disconnection
     socket.on('disconnect', () => {
-        const { roomIDURL, usernameapi } = socket.data;
-        if (roomIDURL && usernameapi) {
-            socket.to(roomIDURL).emit('left', { usernameapi });
-        }
+        // const { roomIDURL, usernameapi } = socket.data;
+        // if (roomIDURL && usernameapi) {
+        //     socket.to(roomIDURL).emit('left', { usernameapi });
+        // }
         
     });
 });
