@@ -1,6 +1,6 @@
 # Socket.io Video Sync Server
 
-This project powers real-time video synchronization across multiple users in the same room using *Socket.IO* and *Express.js*. Ideal for shared watching experiences, such as friends watching a video together with synchronized controls (play, pause, forward, backward).
+This project powers real-time video synchronization across multiple users in the same room using *Socket.IO* and *Express.js*. Ideal for shared watching experiences, such as friends watching a video together with synchronized video controls (play, pause, forward, backward).
 
 ## Features
 
