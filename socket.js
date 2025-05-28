@@ -13,7 +13,8 @@ app.use(cors({
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
     cors: {
-        origin: ['https://videosync-five.vercel.app'],
+        origin: '*',
+        //https://videosync-five.vercel.app
         methods: ["GET","POST"],
         credentials: true,
     }
