@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-    origin: 'https://videosync-five.vercel.app',
+    origin: '*',
     credentials: true,
 }));
 
