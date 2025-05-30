@@ -13,7 +13,7 @@ const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
     cors: {
-        origin:['https://videosync-omega.vercel.app'],
+        origin:'*',
        
         methods: ["GET","POST"],
         credentials: true,
